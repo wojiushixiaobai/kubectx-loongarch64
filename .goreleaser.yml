@@ -33,6 +33,7 @@ builds:
     - arm64
     - ppc64le
     - s390x
+    - loong64
   goarm: [6, 7]
 - id: kubens
   main: ./cmd/kubens
@@ -49,6 +50,7 @@ builds:
     - arm64
     - ppc64le
     - s390x
+    - loong64
   goarm: [6, 7]
 archives:
 - id: kubectx-archive
@@ -64,6 +66,7 @@ archives:
   replacements:
     386: i386
     amd64: x86_64
+    loong64: loongarch64
   format_overrides:
     - goos: windows
       format: zip
@@ -81,6 +84,7 @@ archives:
   replacements:
     386: i386
     amd64: x86_64
+    loong64: loongarch64
   format_overrides:
     - goos: windows
       format: zip
